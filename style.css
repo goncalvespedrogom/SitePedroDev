@@ -1,0 +1,397 @@
+@charset "UTF-8";
+
+/* estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #d47c16;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer
+}
+
+h2.titulo {
+    color:#fff;
+    font-size: 45px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color:#d47c16;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px rgba(255, 147, 23, 0.801);
+    transform: scale(1.10);
+    transition: 0.2s;
+}
+
+/* estilo do cabeçalho */
+header {
+    padding: 40px 4%
+}
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover{
+    color: #fff;
+    transform: scale(1.10);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 45px;
+}
+
+/* estilo do meu mobile */
+.btn-abrir-menu i{
+    color:#d47c16;
+    font-size: 40px;
+    display: none;
+}
+
+.menu-mobile{
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #d47c16;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #d47c16;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #00000094;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* estilo do topo do site */
+section.topo-do-site {
+    padding: 40px 4%;
+    margin-bottom: 20px;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color:#fff;
+    font-size: 50px;
+    line-height: 45px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #da7f17;
+    font-size: 60px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: white;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top:0;
+    }
+    100%{
+        top:30px;
+    }
+}
+
+/* estilo do sobre */
+section.sobre{
+    padding: 40px 4%;
+    margin-top: 230px;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color:#fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color:#d47c16;
+    display: block
+}
+
+.sobre .txt-sobre p{
+    margin:20px 0;
+    text-align: justify;
+}
+
+/* estilo das habilidades */
+section.habilidades {
+    padding: 40px 4%;
+    margin-top: 230px;
+}
+
+section.habilidades .flex {
+    gap: 60px;
+}
+
+.habilidades .habilidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 40px;
+    transition: .2s;
+}
+
+.habilidades .habilidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff79;
+}
+
+.habilidades .habilidades-box i{
+    font-size: 100px;
+    color: #fff;
+}
+
+.habilidades .habilidades-box h3{
+    color: #d47c16;
+    font-size: 30px;
+    margin: 15px 0%;
+}
+
+
+/* estilo das redes */
+section.redes{
+    padding: 40px 4%;
+    margin-top: 230px;
+}
+
+section.redes .flex{
+    justify-content: center;
+}
+
+.redes .txt-redes button{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: none;
+    background-color: #d47c16;
+    font-size: 80px;
+    cursor: pointer;
+    margin: 60px 60px;
+}
+
+/* estilo do rodapé */
+footer{
+    margin-top: 230px;
+    padding: 10px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 150px
+}
+
+footer .email-footer p i{
+    color:#d47c16;
+    font-size: 16px;
+}
+
+footer .email-footer p a{
+    color:#d47c16 ;
+}
+
+footer .telefone-footer {
+    color: #d47c16;
+}
+
+/* responsividade */
+@media screen and (max-width: 942px){
+
+/* cabeçalho estilo geral */
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    .menu-desktop, .btn-contato{
+        display: none;
+        
+    }
+
+/* topo do site responsividade */
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1{
+        font-size: 35px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+/* sobre mim responsividade */
+    section.sobre{
+        padding: 40px 8%;
+        margin-top: 60px;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    section.sobre .flex{
+        flex-direction: column-reverse;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+/* habilidades responsividade */
+    section.habilidades {
+        padding: 40px 8%;
+        margin-top: 60px;
+    }
+
+    h2.titulo {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+/* redes responsividade */
+    section.redes{
+    padding: 40px 8%;
+    margin-top: 30px;
+    text-align: center;
+    }
+
+    .redes .txt-redes button{
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    margin: 60px 3px;
+    }
+
+/* rodapé responsividade */
+    footer{
+    margin-top: 60px;
+    padding: 10px 4%;
+    }
+    footer .flex{
+        gap: 5px
+    }
+
+/* menu mobile responsividade */
+    .btn-abrir-menu i{
+        display: block;
+    }
+} 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontes início -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fonte fim -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ícones do bootstrap início -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- ícones do bootstrap fim -->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <script src="menu.js" defer></script>
+    <title>Pedro Dev</title>
+</head>
+<body>
+   <header>
+    <div class="interface"> <!-- início dos menus dos site  -->
+        <div class="logo">
+                <img src="imagens/logo.png" alt="Logo do Pedro">
+        </div> <!-- logo fim -->
+
+        <nav class="menu-desktop"> <!-- início menu do site -->
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+            </ul>
+        </nav>
+        <div class="btn-contato"> <!-- botão contato menu do site -->
+            <a href="#">
+                <a href="#redes"><button>Contatos</button></a>
+            </a>
+        </div>
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="menu-mobile" id="menu-mobile"> <!-- início menu mobile -->
+            <div class="btn-fechar">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            <nav> 
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#redes">Contatos</a></li>
+                </ul>
+            </nav>
+        </div> <!-- fim menu mobile -->
+        <div class="overlay-menu" id="overlay-menu"></div>
+    </div> 
+   </header>
+   <main> 
+        <section class="topo-do-site" id="inicio"> <!-- inícido do topo do site -->
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Facilitando a vida através dos códigos<span>.</span> </h1>
+                        <p>Me chamo Pedro e acredito que através dos códigos podemos aprimorar e criar novas tecnologias, facilitando tarefas diárias com inovação e acessebilidade, trazendo mais bem-estar na vida das pessoas.</p>
+                        <div class="btn-contato">
+                            <a href="#redes">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div> <!-- texto topo site -->
+                    <div class="img-topo-site">
+                        <img src="imagens/avatarpedromenor.png" alt="Imagem de desenho do Pedro">
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section id="sobre">
+        </section>  
+        <section class="sobre"> <!-- início do sobre mim -->
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="imagens/fotopedrodev350.png" alt="Foto do Pedro">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>Oi, tudo bem? <span>Me chamo Pedro Gonçalves Gomes.</span></h2>
+                        <p>Sou formado em Administração pela Universidade de Uberaba (Uniube) e atualmente cursando Sistemas de Informação. Em minha jornada acadêmica, estou aprofundando meus estudos em busca de conhecimento e aprendizado, com o objetivo de sempre melhorar minhas habilidades de forma produtiva e satisfatória.</p>
+                        <p>Após experiências nas áreas jurídica e administrativa, encontro-me em transição de carreira onde comprometo-me em desenvolver minhas qualificações com foco em Desenvolvimento Front-End, criando interfaces intuitivas e estruturadas. Penso que a programação pode transformar positivamente a vida das pessoas, pois através dos códigos podemos aprimorar novas tecnologias, facilitando tarefas diárias de forma prática, inovadora e inclusiva, trazendo mais acessibilidade e bem-estar.</p>
+                        <p>Agora que já sabe um pouco sobre mim, que tal trabalharmos juntos?</p>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="habilidades" id="habilidades"> <!-- início das habilidades -->
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>HABILIDADES.</span></h2>
+                <div class="flex">
+                    <div class="habilidades-box">
+                        <i class="bi bi-filetype-html"></i>
+                        <h3>HTML</h3>
+                        <p>Com o desenvolvimento dos navegadores e a popularização da internet, o HTML passou a ser utilizado na criação de sites. Atualmente, a tecnologia evoluiu e é utilizada em conjunto com outras ferramentas no desenvolvimento de sites e aplicativos web dinâmicos.</p>
+                    </div>
+                    <div class="habilidades-box">
+                        <i class="bi bi-filetype-css"></i>
+                        <h3>CSS</h3>
+                        <p>O CSS permite modificar o visual de vários elementos ou seções, e além de adicionar animações e outros recursos visuais, também é possível determinar que os elementos sejam renderizados de maneira diferente, de forma que se adequem a diversos dispositivos.</p>
+                    </div>
+                        <div class="habilidades-box">
+                        <i class="bi bi-filetype-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Se trata de uma das principais linguagens de programação, oferecendo uma grande variedade de frameworks e aplicações para os mais diversos dispositivos, e se destaca por deixar as páginas Web dinâmicas, o que é sua principal função.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="redes" id="redes"> <!-- início minhas redes -->
+            <div class="interface">
+                <h2 class="titulo">MEUS <span>CONTATOS.</span></h2>
+                <div class="flex">
+                    <div class="txt-redes">
+                        <a href="https://www.instagram.com/offpxdrx/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/in/pedro-goncalves-gomes/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/goncalvespedrogom" target="_blank"><button><i class="bi bi-github"></i></button></a>    
+                    </div>
+                </div>
+            </div>
+        </section>
+   </main>
+   <footer> <!-- inicio do rodapé -->
+    <div class="interface">
+        <div class="line-footer"> <!-- início da orimeira linha do rodapé -->
+            <div class="flex">
+                <div class="telefone-footer">
+                    <p><i class="bi bi-telephone-fill"></i> +55 (28)99901-7096</p>
+                </div>
+                <div class="email-footer">
+                    <p><i class="bi bi-envelope-fill"></i> <a href="mailto:goncalvespedrogom@gmail.com" target="_blank">goncalvespedrogom@gmail.com</a></p>
+                </div>
+            </div>
+        </div> <!-- fim da primeira linha do rodapé -->
+    </div>
+   </footer>
+</body>
+</html>
