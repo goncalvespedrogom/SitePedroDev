@@ -350,7 +350,7 @@ footer .telefone-footer {
 }
 
 /* responsividade */
-@media screen and (max-width: 942px){
+@media screen and (max-width: 1210px){
 
 /* cabeçalho estilo geral */
     .flex{
@@ -424,7 +424,6 @@ footer .telefone-footer {
         width: 100%;
         max-width: 360px;
         margin: 0 auto;
-        
     }
     section.portfolio .flex{
         gap: 60px;
