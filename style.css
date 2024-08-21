@@ -236,6 +236,7 @@ section.habilidades .flex {
     border-radius: 20px;
     margin-top: 40px;
     transition: .2s;
+    max-width: 24rem;
 }
 
 .habilidades .habilidades-box:hover{
@@ -246,6 +247,7 @@ section.habilidades .flex {
 .habilidades .habilidades-box i{
     font-size: 100px;
     color: #fff;
+    margin-bottom: 1.5rem;
 }
 
 .habilidades .habilidades-box h3{
