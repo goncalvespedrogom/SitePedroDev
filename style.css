@@ -26,7 +26,8 @@ body {
     display: flex;
 }
 
-.btn-contato button{
+.btn-contato button,
+.btn-sobre button{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -365,7 +366,6 @@ footer .telefone-footer {
 
     .menu-desktop, .btn-contato{
         display: none;
-        
     }
 
 /* topo do site responsividade */
@@ -404,6 +404,10 @@ footer .telefone-footer {
 
     .img-sobre img{
         width: 100%;
+    }
+
+    .btn-sobre{
+        text-align: center;
     }
 
 /* habilidades responsividade */
