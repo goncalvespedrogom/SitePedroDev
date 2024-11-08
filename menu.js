@@ -3,6 +3,8 @@ let menu = document.getElementById('menu-mobile')
 let overlay = document.getElementById('overlay-menu')
 let scroll = document.querySelector('.scroll-top')
 
+/* início menu mobile abrir-fechar */
+
 btnMenu.addEventListener('click', ()=>{
     menu.classList.add('abrir-menu')
 })
@@ -15,6 +17,10 @@ overlay.addEventListener('click', ()=>{
     menu.classList.remove('abrir-menu')
 })
 
+/* fim menu mobile abrir-fechar */
+
+/* início back to top */
+
 window.addEventListener('scroll', function(){
     scroll.classList.toggle('active', window.scrollY > 450)
 })
@@ -25,3 +31,64 @@ function backTop() {
         behavior: 'smooth'
     })
 }
+
+/* fim back to top */
+
+/* início scroll reveal */
+
+    ScrollReveal().reveal('.logo', {
+        origin: 'top',
+        duration: 2000,
+        distance: '20%',
+    })
+
+    ScrollReveal().reveal('.menu-desktop', {
+        origin: 'top',
+        duration: 2000,
+        distance: '20%',
+    })
+
+    ScrollReveal().reveal('.btn-idioma', {
+        origin: 'top',
+        duration: 2000,
+        distance: '20%',
+    })
+
+    ScrollReveal().reveal('.txt-topo-site', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%',
+    })
+
+    ScrollReveal().reveal('.img-sobre', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%',
+    })
+
+    ScrollReveal().reveal('.txt-sobre', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%',
+
+    })
+
+    ScrollReveal().reveal('.flex-skills', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%',
+    })
+
+    ScrollReveal().reveal('.portfolio', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%',
+    })
+
+    ScrollReveal().reveal('.redes', {
+        origin: 'bottom',
+        duration: 2000,
+        distance: '20%',
+    })
+
+/* fim scroll reveal */
