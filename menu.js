@@ -36,30 +36,6 @@ function backTop() {
 
 /* início scroll reveal */
 
-    ScrollReveal().reveal('.logo', {
-        origin: 'top',
-        duration: 2000,
-        distance: '20%',
-    })
-
-    ScrollReveal().reveal('.menu-desktop', {
-        origin: 'top',
-        duration: 2000,
-        distance: '20%',
-    })
-
-    ScrollReveal().reveal('.btn-idioma', {
-        origin: 'top',
-        duration: 2000,
-        distance: '20%',
-    })
-
-    ScrollReveal().reveal('.txt-topo-site', {
-        origin: 'left',
-        duration: 2000,
-        distance: '20%',
-    })
-
     ScrollReveal().reveal('.img-sobre', {
         origin: 'left',
         duration: 2000,
@@ -71,18 +47,6 @@ function backTop() {
         duration: 2000,
         distance: '20%',
 
-    })
-
-    ScrollReveal().reveal('.flex-skills', {
-        origin: 'left',
-        duration: 2000,
-        distance: '20%',
-    })
-
-    ScrollReveal().reveal('.portfolio', {
-        origin: 'left',
-        duration: 2000,
-        distance: '20%',
     })
 
     ScrollReveal().reveal('.redes', {
